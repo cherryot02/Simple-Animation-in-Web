@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Smooch&display=swap');
+
+body
+{
+    background-color: black;
+}
+
+#container
+{
+    width: 1000px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #1c1c1c;
+    background-image: linear-gradient(#151515, #000000);
+    overflow: hidden;
+}
+
+.text
+{
+    text-align: center;
+}
+
+h1
+{
+    color: #f5f5f5;
+    font-family: Gajraj One, sans-serif;
+    font-size: 100px;
+    text-shadow: 0 10px 15px #00b7c4;
+    margin: 0;
+}
+
+h2
+{
+    color: #dbdbdb;
+    font-family: Smooch, sans-serif;
+    font-size: 80px;
+    text-shadow: 0 0 10px #c46c00;
+    position: absolute;
+    top: 0px;
+    left: 390px;
+}
+
+.synth
+{
+    opacity: 10%;
+    position: absolute;
+    left: 350px;
+    bottom: 20px;
+    transform: scale(70%);
+    z-index: 4;
+}
+
+#wave1 
+{
+    height: 300px;
+    width: 1000px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    z-index: 4;
+    overflow: hidden;
+}
+  
+#wave1::after 
+{
+    content: "";
+    position: absolute;
+    top: 80px;
+    right: 300px;
+    height: 1000px;
+    width: 1000px;
+    background-color: #d20093;
+    background-image: linear-gradient(#c400a7, #4338d2);
+    box-shadow: 0 0 20px #d20093;
+    border-radius: 40%;
+    animation: wave_1 10s linear forwards infinite;
+}
+
+@keyframes wave_1
+{
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#wave2 
+{
+    height: 300px;
+    width: 1000px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+  
+#wave2::after 
+{
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    height: 1000px;
+    width: 1000px;
+    background-color: #d20093;
+    background-image: linear-gradient(#0da84e, #c400a7);
+    box-shadow: 0 0 20px #d20093;
+    border-radius: 40%;
+    animation: wave_2 15s linear forwards infinite;
+}
+
+@keyframes wave_2
+{
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#sun
+{
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+    background-image: linear-gradient(orange, red);
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #fe280289;
+    z-index: 2;
+}
+
+#sun:hover
+{
+    cursor: pointer;
+    -webkit-transition: .4s;
+	-moz-transition: .4s;
+	transition: .4s;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+}
+
+.tree1
+{
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    animation: tree_1 3s ease-in-out infinite;
+}
+
+@keyframes tree_1
+{
+    0% 
+    { 
+        transform: translate(0,  0px); 
+    }
+    50%  
+    { 
+        transform: translate(0, 15px); 
+    }
+    100%   
+    { 
+        transform: translate(0, -0px); 
+    }
+}
+
+.tree2
+{
+    position: absolute;
+    top: 90px;
+    left: 80px;
+    animation: tree_2 3s ease-in-out infinite;
+}
+
+@keyframes tree_2
+{
+    0% 
+    { 
+        transform: translate(0,  0px); 
+    }
+    50%  
+    { 
+        transform: translate(0, 15px); 
+    }
+    100%   
+    { 
+        transform: translate(0, -0px); 
+    }
+}
+
+#cat
+{
+    position: absolute;
+    left: 475px;
+    top: 250px;
+    z-index: 1;
+}
+
+
